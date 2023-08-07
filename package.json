@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "storybook build",
     "storycap": "storycap --serverCmd \"npx http-server storybook-static -p 6006\" http://localhost:6006"
   },
   "dependencies": {
