@@ -9,7 +9,11 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "storycap": "storycap --serverCmd \"npx http-server storybook-static -p 6006\" http://localhost:6006"
+    "storycap": "storycap --serverCmd \"npx http-server storybook-static -p 6006\" http://localhost:6006",
+    "expected": "rm -rf expected/* | mv __screenshots__/* expected/",
+    "actual": "rm -rf actual/* | mv __screenshots__/* actual/",
+    "new-expected": "rm -rf expected/* | mv actual/* expected/",
+    "reg-cli": "npx reg-cli actual expected diff -R index.html"
   },
   "dependencies": {
     "@types/node": "20.4.4",
