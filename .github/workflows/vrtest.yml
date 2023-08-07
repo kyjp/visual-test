@@ -2,10 +2,10 @@ name: Visual Regression Test
 on:
   push:
     branches:
-      - ci/**
+      - main
   pull_request:
     branches-ignore:
-      - ci/**
+      - main
     types:
       - opened
       - synchronize
