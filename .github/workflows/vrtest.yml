@@ -24,7 +24,7 @@ jobs:
       # - name: Generate storybook
       #   run: npm run build-storybook
       - name: Run storycap
-        run: npm run cli-storycap
+        run: npm run ci:storycap
       - name: Run new-expected
         run: npm run new-expected
       - name: Run actual
