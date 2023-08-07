@@ -23,9 +23,11 @@ jobs:
         run: npm install
       - name: Generate storybook
         run: npm run build-storybook
+      - name: Run storycap
+        run: npm run storycap
       - name: Run new-expected
         run: npm run new-expected
       - name: Run actual
         run: npm run actual
-      - name: Run storycap
-        run: npm run storycap
+      - name: Run reg-cli
+        run: npm run reg-cli
