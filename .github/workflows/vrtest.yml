@@ -21,10 +21,10 @@ jobs:
           node-version: 18
       - name: Install Dependencies
         run: npm install
-      - name: Generate storybook
-        run: npm run build-storybook
+      # - name: Generate storybook
+      #   run: npm run build-storybook
       - name: Run storycap
-        run: npm run storycap
+        run: npm run cli-storycap
       - name: Run new-expected
         run: npm run new-expected
       - name: Run actual

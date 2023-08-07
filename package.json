@@ -13,7 +13,9 @@
     "expected": "rm -rf expected/* | mv __screenshots__/* expected/",
     "actual": "rm -rf actual/* | mv __screenshots__/* actual/",
     "new-expected": "rm -rf expected/* | mv actual/* expected/",
-    "reg-cli": "npx reg-cli actual expected diff -R index.html"
+    "reg-cli": "npx reg-cli actual expected diff -R index.html",
+    "cli-storybook": "start-storybook -p 6006 -s public",
+    "cli-storycap": "storycap --serverCmd \"npm run cli-storybook\" http://localhost:6006 --serverTimeout 600000"
   },
   "dependencies": {
     "@types/node": "20.4.4",
