@@ -15,7 +15,8 @@
     "new-expected": "rm -rf expected/* | mv actual/* expected/",
     "reg-cli": "npx reg-cli actual expected diff -R index.html",
     "cli-storybook": "start-storybook -p 6006 -s public",
-    "cli-storycap": "storycap --serverCmd \"npm run cli-storybook\" http://localhost:6006 --serverTimeout 600000"
+    "ci:storybook-generate": "build-storybook  -c .storybook -o dist-storybook -s public",
+    "ci:storycap": "storycap --serverTimeout 60000 --captureTimeout 10000 --serverCmd 'npx http-server dist-storybook --ci -p 9009' http://localhost:9009"
   },
   "dependencies": {
     "@types/node": "20.4.4",
