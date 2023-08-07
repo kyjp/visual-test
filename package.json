@@ -9,9 +9,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "storycap": "storycap --serverCmd \"npx http-server storybook-static -p 6006\" http://localhost:6006",
-    "ci:screenshot": "storycap -C puppeteer --serverCmd \"start-storybook -p 6006\" http://localhost:6006 --serverTimeout 60000 --delay 1000",
-    "ci:reg-suit": "reg-suit run"
+    "storycap": "storycap --serverCmd \"npx http-server storybook-static -p 6006\" http://localhost:6006"
   },
   "dependencies": {
     "@types/node": "20.4.4",
